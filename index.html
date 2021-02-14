@@ -23,13 +23,24 @@
     <title>bootstrap paractice</title>
 
     <style>
-        .wrap{
+        .wrap {
             width: 900px;
             margin: 10px auto;
         }
-        .cmnts{
+
+        .cmnts {
             color: blue;
             font-weight: bold;
+        }
+
+        .posting-box {
+            width: 500px;
+            height: 340px;
+            padding: 50px;
+            margin: 20px auto;
+
+            border: 3px black solid;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -45,6 +56,17 @@
             <a class="btn btn-primary btn-lg" href="#" role="button">Open posting box</a>
         </p>
     </div>
+    <div class="posting-box">
+        <div class="mb-3">
+            <label for="article-url" class="form-label">Article URL</label>
+            <input type="url" class="form-control" id="article-url" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
     <div class="card-columns">
         <div class="card">
             <img class="card-img-top"
@@ -53,7 +75,7 @@
             <div class="card-body">
                 <a href="https://www.google.com/"><h5 class="card-title">title</h5></a>
                 <p class="card-text">article</p>
-                <p class="card-text cmnts">comments</p>
+                <p class="cmnts">comments</p>
             </div>
         </div>
         <div class="card">
@@ -63,7 +85,7 @@
             <div class="card-body">
                 <a href="https://www.google.com/"><h5 class="card-title">title</h5></a>
                 <p class="card-text">article</p>
-                <p class="card-text cmnts">comments</p>
+                <p class="cmnts">comments</p>
             </div>
         </div>
         <div class="card">
@@ -73,7 +95,7 @@
             <div class="card-body">
                 <a href="https://www.google.com/"><h5 class="card-title">title</h5></a>
                 <p class="card-text">article</p>
-                <p class="card-text cmnts">comments</p>
+                <p class="cmnts">comments</p>
             </div>
         </div>
         <div class="card">
@@ -83,7 +105,7 @@
             <div class="card-body">
                 <a href="https://www.google.com/"><h5 class="card-title">title</h5></a>
                 <p class="card-text">article</p>
-                <p class="card-text cmnts">comments</p>
+                <p class="cmnts">comments</p>
             </div>
         </div>
         <div class="card">
@@ -93,7 +115,7 @@
             <div class="card-body">
                 <a href="https://www.google.com/"><h5 class="card-title">title</h5></a>
                 <p class="card-text">article</p>
-                <p class="card-text cmnts">comments</p>
+                <p class="cmnts">comments</p>
             </div>
         </div>
         <div class="card">
@@ -103,7 +125,7 @@
             <div class="card-body">
                 <a href="https://www.google.com/"><h5 class="card-title">title</h5></a>
                 <p class="card-text">article</p>
-                <p class="card-text cmnts">comments</p>
+                <p class="cmnts">comments</p>
             </div>
         </div>
     </div>
