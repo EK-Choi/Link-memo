@@ -41,8 +41,24 @@
 
             border: 3px black solid;
             border-radius: 5px;
+
+            display: none;
         }
     </style>
+
+    <script>
+        function openclose(){
+            let status = $('#post-box').css('display');
+            if(status == 'block'){
+                $('#post-box').hide();
+                $('#btn-posting-box').text('Open posting box');
+            }
+            else {
+                $('#post-box').show();
+                $('#btn-posting-box').text('Close posting box');
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -51,12 +67,11 @@
         <h1 class="display-4">My Link Memo!</h1>
         <p class="lead">This is Link Memo where you can save important links and check out later.</p>
         <hr class="my-4">
-        <p></p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Open posting box</a>
+            <a onclick="openclose()" id="btn-posting-box" class="btn btn-primary btn-lg" href="#" role="button">Open posting box</a>
         </p>
     </div>
-    <div class="posting-box">
+    <div class="posting-box" id="post-box">
         <div class="mb-3">
             <label for="article-url" class="form-label">Article URL</label>
             <input type="url" class="form-control" id="article-url" aria-describedby="emailHelp">
@@ -67,7 +82,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Save</button>
     </div>
-    <div class="card-columns">
+    <div class="card-columns" id="cards-box">
         <div class="card">
             <img class="card-img-top"
                  src="https://cdn.shopify.com/s/files/1/0073/8148/3605/articles/Claude-Monet-San-Giorgio-Maggiore-at-Dusk_2048x.jpg?v=1556745106"
